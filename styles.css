@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    /* background-color: #f9f9f9; */
+    background: #202731;
+    /* background: #202020; */
+    /* color: #333; */
+    color: white;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20vw;
+    min-height: 400px;
+}
+
+.blue {
+    /* background: #1E90FF; */
+    /* color: #f9f9f9; */
+
+    background: #3c31dd;
+}
+
+.red {
+    /* background: #FF0000; */
+    /* color: #f9f9f9; */
+
+    /* background: #dd3c31; */
+    background: #dd3d31;
+}
+
+.pink {
+    /* background: #FFC0CB; */
+    /* color: #f9f9f9; */
+
+    background: #ff0066;
+}
+
+.dark {
+    /* background: #000000; */
+    /* color: #f9f9f9; */
+
+    background: #0f0f10;
+}
+
+.curve-1 {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+}
+
+.curve-1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 250px;
+    width: 55%;
+    border-radius: 100% 50%;
+    background-color: #dd3d31;
+    transform: translate(85%, 60%);
+}
+.curve-1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 250px;
+    width: 55%;
+    border-radius: 100% 50%;
+    background-color: #3c31dd;
+    transform: translate(-7%, 50%);
+    z-index: 1;
+}
+
+.curve-2 {
+    position: absolute;
+    bottom: 0;
+    height: 240px;
+    width: 100%;
+}
+
+.curve-2::before {
+    content: '';
+    position: absolute;
+    height: 240px;
+    width: 55%;
+    display: block;
+    border-radius: 100% 50%;
+    background: #ff0066;
+    transform: translate(85%, 60%);
+}
+
+.curve-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 240px;
+    width: 55%;
+    background: #dd3f31;
+    border-radius: 100% 50%;
+    translate: -7% 50%;
+    z-index: 1;
+
+    /* background: #dd3d31;
+    border-radius: 100% 50%;
+    transform: translate(-7%, 50%);
+    z-index: 1; */
+}
